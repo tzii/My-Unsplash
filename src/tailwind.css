@@ -1,0 +1,32 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  button,
+  input {
+    @apply focus:outline-none;
+  }
+}
+
+.pos-center {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.img-container > .mask {
+  opacity: 0;
+}
+
+.img-container:hover > .mask {
+  opacity: 1;
+}
+
+.img-container:hover p {
+  @apply animate-slide-top;
+}
+.img-container:hover button {
+  @apply animate-slide-left;
+}
