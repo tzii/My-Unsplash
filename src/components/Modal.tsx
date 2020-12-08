@@ -31,18 +31,32 @@ export default function Modal({ state, setState, setNoti }: ModalProps) {
       return;
     } else setLabelVali(true);
 
+    console.log(reg);
+    console.log(e.target.url.value);
+    console.log(reg.test(e.target.url.value));
+    console.log(!reg.test(e.target.url.value));
+    let a = reg.test(e.target.url.value);
+    console.log(typeof a);
+    console.log("\\\\");
+
     if (!reg.test(e.target.url.value)) {
+      console.log(reg);
+      console.log(e.target.url.value);
+      console.log(reg.test(e.target.url.value));
       setURLVali(false);
+
       return;
     } else setURLVali(true);
 
-    if (e.target.password.value === "") {
+    console.log("TEST" + e.target.url.value);
+    console.log("//////");
+    if (e.target.passwordd.value === "") {
       setPassVali(false);
       return;
     } else setPassVali(true);
 
     setPercent(80);
-    uploadImage(e.target.label.value, e.target.url.value, e.target.password.value).then((res) => {
+    uploadImage(e.target.label.value, e.target.url.value, e.target.passwordd.value).then((res) => {
       searchImage("").then(setImages);
       setPercent(100);
       setNoti(res);
@@ -52,13 +66,13 @@ export default function Modal({ state, setState, setNoti }: ModalProps) {
 
   const deleteHandler = (e: any) => {
     e.preventDefault();
-    if (e.target.password.value === "") {
+    if (e.target.passwordd.value === "") {
       setPass2Vali(false);
       return;
     } else setPass2Vali(true);
 
     setPercent(80);
-    deleteImage(imgId, e.target.password.value).then((res) => {
+    deleteImage(imgId, e.target.passwordd.value).then((res) => {
       searchImage("").then(setImages);
       setPercent(100);
       setNoti(res);
@@ -102,7 +116,7 @@ export default function Modal({ state, setState, setNoti }: ModalProps) {
               autoComplete="off"
               placeholder="https://images.unsplash.com/photo-1584395630827-860eee694d7b?ixlib=r..."
             />
-            <label className="text-gray-600 text-sm mt-4" htmlFor="password">
+            <label className="text-gray-600 text-sm mt-4" htmlFor="passwordd">
               Password
             </label>
             <input
@@ -112,7 +126,7 @@ export default function Modal({ state, setState, setNoti }: ModalProps) {
               }
               type="text"
               name=""
-              id="password"
+              id="passwordd"
               placeholder="Password"
               autoComplete="off"
             />
@@ -139,7 +153,7 @@ export default function Modal({ state, setState, setNoti }: ModalProps) {
             onSubmit={deleteHandler}
           >
             <h5 className="text-gray-700 text-lg">Are you sure?</h5>
-            <label className="text-gray-600 text-sm mt-4" htmlFor="password">
+            <label className="text-gray-600 text-sm mt-4" htmlFor="passwordd">
               Password
             </label>
             <input
@@ -149,7 +163,7 @@ export default function Modal({ state, setState, setNoti }: ModalProps) {
               }
               type="Password"
               name=""
-              id="password"
+              id="passwordd"
               placeholder="********"
               autoComplete="off"
             />

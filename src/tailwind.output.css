@@ -13967,6 +13967,10 @@ button:focus, input:focus {
   min-height: 0px;
 }
 
+.min-h-500 {
+  min-height: 500px;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -42661,6 +42665,10 @@ button:focus, input:focus {
     min-height: 0px;
   }
 
+  .sm\:min-h-500 {
+    min-height: 500px;
+  }
+
   .sm\:min-h-full {
     min-height: 100%;
   }
@@ -71241,6 +71249,10 @@ button:focus, input:focus {
 
   .md\:min-h-0 {
     min-height: 0px;
+  }
+
+  .md\:min-h-500 {
+    min-height: 500px;
   }
 
   .md\:min-h-full {
@@ -99825,6 +99837,10 @@ button:focus, input:focus {
     min-height: 0px;
   }
 
+  .lg\:min-h-500 {
+    min-height: 500px;
+  }
+
   .lg\:min-h-full {
     min-height: 100%;
   }
@@ -128407,6 +128423,10 @@ button:focus, input:focus {
     min-height: 0px;
   }
 
+  .xl\:min-h-500 {
+    min-height: 500px;
+  }
+
   .xl\:min-h-full {
     min-height: 100%;
   }
@@ -156987,6 +157007,10 @@ button:focus, input:focus {
 
   .\32xl\:min-h-0 {
     min-height: 0px;
+  }
+
+  .\32xl\:min-h-500 {
+    min-height: 500px;
   }
 
   .\32xl\:min-h-full {
