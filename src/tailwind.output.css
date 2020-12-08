@@ -25138,6 +25138,10 @@ button:focus, input:focus {
   z-index: 0;
 }
 
+.z-5 {
+  z-index: 5;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -25166,6 +25170,10 @@ button:focus, input:focus {
   z-index: 0;
 }
 
+.focus-within\:z-5:focus-within {
+  z-index: 5;
+}
+
 .focus-within\:z-10:focus-within {
   z-index: 10;
 }
@@ -25192,6 +25200,10 @@ button:focus, input:focus {
 
 .focus\:z-0:focus {
   z-index: 0;
+}
+
+.focus\:z-5:focus {
+  z-index: 5;
 }
 
 .focus\:z-10:focus {
@@ -53807,6 +53819,10 @@ button:focus, input:focus {
     z-index: 0;
   }
 
+  .sm\:z-5 {
+    z-index: 5;
+  }
+
   .sm\:z-10 {
     z-index: 10;
   }
@@ -53835,6 +53851,10 @@ button:focus, input:focus {
     z-index: 0;
   }
 
+  .sm\:focus-within\:z-5:focus-within {
+    z-index: 5;
+  }
+
   .sm\:focus-within\:z-10:focus-within {
     z-index: 10;
   }
@@ -53861,6 +53881,10 @@ button:focus, input:focus {
 
   .sm\:focus\:z-0:focus {
     z-index: 0;
+  }
+
+  .sm\:focus\:z-5:focus {
+    z-index: 5;
   }
 
   .sm\:focus\:z-10:focus {
@@ -82377,6 +82401,10 @@ button:focus, input:focus {
     z-index: 0;
   }
 
+  .md\:z-5 {
+    z-index: 5;
+  }
+
   .md\:z-10 {
     z-index: 10;
   }
@@ -82405,6 +82433,10 @@ button:focus, input:focus {
     z-index: 0;
   }
 
+  .md\:focus-within\:z-5:focus-within {
+    z-index: 5;
+  }
+
   .md\:focus-within\:z-10:focus-within {
     z-index: 10;
   }
@@ -82431,6 +82463,10 @@ button:focus, input:focus {
 
   .md\:focus\:z-0:focus {
     z-index: 0;
+  }
+
+  .md\:focus\:z-5:focus {
+    z-index: 5;
   }
 
   .md\:focus\:z-10:focus {
@@ -110947,6 +110983,10 @@ button:focus, input:focus {
     z-index: 0;
   }
 
+  .lg\:z-5 {
+    z-index: 5;
+  }
+
   .lg\:z-10 {
     z-index: 10;
   }
@@ -110975,6 +111015,10 @@ button:focus, input:focus {
     z-index: 0;
   }
 
+  .lg\:focus-within\:z-5:focus-within {
+    z-index: 5;
+  }
+
   .lg\:focus-within\:z-10:focus-within {
     z-index: 10;
   }
@@ -111001,6 +111045,10 @@ button:focus, input:focus {
 
   .lg\:focus\:z-0:focus {
     z-index: 0;
+  }
+
+  .lg\:focus\:z-5:focus {
+    z-index: 5;
   }
 
   .lg\:focus\:z-10:focus {
@@ -139517,6 +139565,10 @@ button:focus, input:focus {
     z-index: 0;
   }
 
+  .xl\:z-5 {
+    z-index: 5;
+  }
+
   .xl\:z-10 {
     z-index: 10;
   }
@@ -139545,6 +139597,10 @@ button:focus, input:focus {
     z-index: 0;
   }
 
+  .xl\:focus-within\:z-5:focus-within {
+    z-index: 5;
+  }
+
   .xl\:focus-within\:z-10:focus-within {
     z-index: 10;
   }
@@ -139571,6 +139627,10 @@ button:focus, input:focus {
 
   .xl\:focus\:z-0:focus {
     z-index: 0;
+  }
+
+  .xl\:focus\:z-5:focus {
+    z-index: 5;
   }
 
   .xl\:focus\:z-10:focus {
@@ -168087,6 +168147,10 @@ button:focus, input:focus {
     z-index: 0;
   }
 
+  .\32xl\:z-5 {
+    z-index: 5;
+  }
+
   .\32xl\:z-10 {
     z-index: 10;
   }
@@ -168115,6 +168179,10 @@ button:focus, input:focus {
     z-index: 0;
   }
 
+  .\32xl\:focus-within\:z-5:focus-within {
+    z-index: 5;
+  }
+
   .\32xl\:focus-within\:z-10:focus-within {
     z-index: 10;
   }
@@ -168141,6 +168209,10 @@ button:focus, input:focus {
 
   .\32xl\:focus\:z-0:focus {
     z-index: 0;
+  }
+
+  .\32xl\:focus\:z-5:focus {
+    z-index: 5;
   }
 
   .\32xl\:focus\:z-10:focus {

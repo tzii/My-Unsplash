@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import AppContext from "../context";
 
 type ImageProps = {
   setState: Function;
+  image: any;
 };
 
-export default function Image({ setState }: ImageProps) {
+export default function Image({ setState, image }: ImageProps) {
+  const { setImgId } = useContext(AppContext);
+
   const deleteHandler = () => {
+    setImgId(image._id);
     setState("delete");
   };
 
@@ -19,10 +24,10 @@ export default function Image({ setState }: ImageProps) {
           >
             delete
           </button>
-          <p className=" text-white text-lg absolute bottom-0 left-0 p-3">Morbi consequat lectus non orci maximus</p>
+          <p className=" text-white text-lg absolute bottom-0 left-0 p-3">{image.label}</p>
         </div>
       </div>
-      <img className="w-full" src="http://placehold.it/90x90" alt="" />
+      <img className="w-full" src={image.url} alt="" />
     </div>
   );
 }

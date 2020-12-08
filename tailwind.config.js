@@ -6,6 +6,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      zIndex: {
+        5: 5,
+      },
       minWidth: {
         640: 640,
       },
