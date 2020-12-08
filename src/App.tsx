@@ -17,7 +17,6 @@ export default function App() {
 
   useEffect(() => {
     setPercent(80);
-    console.log(80);
     searchImage(searchString).then((res) => {
       setImages(res);
       setPercent(100);

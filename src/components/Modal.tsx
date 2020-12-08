@@ -8,7 +8,7 @@ type ModalProps = {
   setNoti: Function;
 };
 
-const reg = new RegExp("(http|https|ftp):[/]{2}([a-zA-Z0-9-.]+.[a-zA-Z]{2,4})", "g");
+const reg = new RegExp("(http|https|ftp):[/]{2}([a-zA-Z0-9-.]+.[a-zA-Z]{2,4})");
 
 export default function Modal({ state, setState, setNoti }: ModalProps) {
   const [labelVali, setLabelVali] = useState(true);
@@ -31,25 +31,11 @@ export default function Modal({ state, setState, setNoti }: ModalProps) {
       return;
     } else setLabelVali(true);
 
-    console.log(reg);
-    console.log(e.target.url.value);
-    console.log(reg.test(e.target.url.value));
-    console.log(!reg.test(e.target.url.value));
-    let a = reg.test(e.target.url.value);
-    console.log(typeof a);
-    console.log("\\\\");
-
     if (!reg.test(e.target.url.value)) {
-      console.log(reg);
-      console.log(e.target.url.value);
-      console.log(reg.test(e.target.url.value));
       setURLVali(false);
-
       return;
     } else setURLVali(true);
 
-    console.log("TEST" + e.target.url.value);
-    console.log("//////");
     if (e.target.passwordd.value === "") {
       setPassVali(false);
       return;
